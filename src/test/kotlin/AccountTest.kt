@@ -42,7 +42,12 @@ class AccountTest {
         Assert.assertEquals(true, account.transactions.isEmpty())
     }
 
+    @Test
+    fun whenUserDepositsTransactionsLengthIs1() {
+        account.deposit(100)
 
+        Assert.assertEquals(1, account.transactions.size)
+    }
 
 
 }
