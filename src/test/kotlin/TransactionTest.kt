@@ -2,7 +2,7 @@ import org.junit.Assert
 import org.junit.Test
 
 class TransactionTest {
-    private val transaction = Transaction("deposit", 100)
+    private val transaction = Transaction("deposit", 100, 100)
 
     @Test
 
@@ -14,5 +14,11 @@ class TransactionTest {
 
     fun transactionHasAnAmount() {
         Assert.assertEquals(100, transaction.amount)
+    }
+
+    @Test
+
+    fun transactionHasABalance() {
+        Assert.assertEquals(100, transaction.balance)
     }
 }
