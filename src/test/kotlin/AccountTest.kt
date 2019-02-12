@@ -16,5 +16,12 @@ class AccountTest {
         Assert.assertEquals(100, account.balance)
     }
 
+    @Test
+    fun balanceIs50WhenWithdrawing50() {
+        account.add(100)
+        account.withdraw(50)
+        Assert.assertEquals(50, account.balance)
+    }
+
 
 }
