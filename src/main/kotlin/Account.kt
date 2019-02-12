@@ -1,6 +1,6 @@
-class Account(var balance: Int = 0) {
+class Account(var balance: Int = 0, var transactions: MutableList<Any>) {
 
-    fun add(amount: Int) {
+    fun deposit(amount: Int) {
         balance += amount
     }
 
