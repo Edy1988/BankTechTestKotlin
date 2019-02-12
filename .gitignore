@@ -36,6 +36,8 @@
 # .idea/modules.xml
 # .idea/*.iml
 # .idea/modules
+.idea/workspace.xml
+
 
 # CMake
 cmake-build-*/

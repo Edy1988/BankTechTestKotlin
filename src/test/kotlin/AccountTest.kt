@@ -17,10 +17,21 @@ class AccountTest {
     }
 
     @Test
-    fun balanceIs50WhenWithdrawing50() {
+    fun balanceIs50WhenWithdrawing50From100() {
         account.add(100)
         account.withdraw(50)
         Assert.assertEquals(50, account.balance)
+    }
+
+
+    @Test
+    fun balanceIs20WhenAdding100Withdrawing50Adding10Withdrawing40() {
+        account.add(100)
+        account.withdraw(50)
+        account.add(10)
+        account.withdraw(40)
+
+        Assert.assertEquals(20, account.balance)
     }
 
 
