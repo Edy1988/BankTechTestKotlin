@@ -1,3 +1,3 @@
-class Transaction(val type: String) {
+class Transaction(val type: String, val amount: Int) {
 
 }
