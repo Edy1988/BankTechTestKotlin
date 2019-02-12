@@ -13,6 +13,9 @@ As a user,
 So I can use my account,
 I can withdraw money.
 
+As a user, 
+I can track all transactions. 
+
 As a user,
 So I can keep track of my funds,
 I can view statement in this format:
